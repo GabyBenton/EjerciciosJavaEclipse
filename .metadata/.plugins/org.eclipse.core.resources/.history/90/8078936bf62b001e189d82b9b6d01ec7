@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class SwitchDemo2 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Selecciona un mes (1-12): ");
+		int month = in.nextInt();
+		switch (month) {
+		case 1,3,5,7,8,10,12:
+			System.out.println();
+			break;
+	
+		
+		case 12:
+			monthString="Diciembre";
+			break;
+
+		default:
+			monthString="Mes inválido";
+			break;
+		}//switch
+		System.out.println(monthString);
+	}//main
+}

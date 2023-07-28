@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Fibonacci {
+	public static void main(String[] args) {
+		int num1=0;
+		int num2=1;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Ingresa el número hasta donde quieres que llegue la serie: ");
+		int cont = in.nextInt();
+		do {
+		
+		num1+=num2;
+			
+		} while (num1 <=cont);	
+	}
+}

@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class For {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("-------------------Ciclo ejemplo-------------------------\n");
+		for (int cont = 0; cont < 10; cont++) {
+			System.out.println(cont);
+		}//for cont
+		
+		System.out.println("-------------------Ciclo mostrar pares 1-------------------------\n");
+		//Ciclo para mostrar pares entre 0-100
+		for (int num = 0; num <= 100; num++) {
+			if ((num%2)==0) {
+				System.out.println(num);
+			}
+			if (num==70) {
+				break;//Rompe el ciclo
+			}
+		}
+		
+		System.out.println("-------------------Ciclo mostrar pares 2-------------------------\n");
+		//Ciclo para mostrar pares entre 0-100
+		for (int num = 0; num <= 100; num+=2) {
+				System.out.println(num);
+		}
+		
+		System.out.println("-------------------Ciclo con continue-------------------------\n");
+		Scanner in = new Scanner(System.in);
+		System.out.print("Escribe un número para brincar: ");
+		int num=in.nextInt();
+		for (int cont = 0; cont <= 100; cont++) {
+			if(cont==num) {
+				continue;//brincar la siguiente vuelta
+			}//if
+
+
+
+}
+		
+	}
+
+}

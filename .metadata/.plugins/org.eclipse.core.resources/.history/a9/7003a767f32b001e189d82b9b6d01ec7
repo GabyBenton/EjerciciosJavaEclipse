@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+
+import java.util.Scanner;
+
+/**
+ * 
+ */
+public class Comisiones {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		System.out.print("Ingresa el total de tus ventas: ");
+		double ventas = in.nextDouble();
+		double comision;
+		if(ventas >=10000) {
+			comision = ventas *0.30;
+		}else if((ventas >=5001)||(ventas<=9999)) {
+			comision = ventas *0.20;
+		}else if((ventas>=1001)||(ventas<=4999)) {
+			comision = ventas *0.10;
+		}else {
+			(ventas*0.30);
+		}//if else
+		
+		in.close();
+	}
+
+}
